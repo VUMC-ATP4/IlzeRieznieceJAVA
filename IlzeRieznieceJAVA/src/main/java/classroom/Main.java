@@ -1,3 +1,5 @@
+package classroom;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Ilze Riezniece, JAVA 1 lesson");
