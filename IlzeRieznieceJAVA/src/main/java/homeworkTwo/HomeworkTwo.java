@@ -1,5 +1,7 @@
 package homeworkTwo;
 
+import java.util.Scanner;
+
 public class HomeworkTwo {
     public static void main(String[] args) {
 
@@ -10,13 +12,16 @@ public class HomeworkTwo {
         System.out.println(x>0);
         System.out.println(x<0);
         System.out.println((x>5 && x<=10));
-        // System.out.println(!(x<5) || !(x = 5) && (x<10));
-        // System.out.println(x=0 || x=10);
+        System.out.println(!(x<5) || !(x == 5) && (x<10));
+        System.out.println(x==0 || x==10);
         System.out.println(x*x>10);
 
-        System.out.println("Second task - print month name based on number");
+        System.out.println("\nSecond task - print month name based on number");
 
-        int month = 7;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of the month");
+
+        int month = scanner.nextInt();
         switch (month) {
             case 1:
                 System.out.println("January");
@@ -57,23 +62,40 @@ public class HomeworkTwo {
                 System.out.println("The month" + " " + month + " " + " is not defined");
         }
 
-        System.out.println("Third task - print the biggest value");
+        System.out.println("\nThird task - print the biggest value");
 
-            int y = 10;
-            int z = 16;
-            int w = 9;
+        //   int y = 10;
+        //    int z = 16;
+        //    int w = 9;
 
-            if(y>=z && y>=w) {
-                System.out.println(y + " " + "is the largest number");
-            }
-            else if (z>=y && z>=w){
-                System.out.println(z + " " + "is the largest number");
-            }
-            else{
-                System.out.println(w + " " + "is the largest number");
-            }
+        //    if(y>=z && y>=w) {
+        //        System.out.println(y + " " + "is the largest number");
+        //   }
+        //    else if (z>=y && z>=w){
+        //        System.out.println(z + " " + "is the largest number");
+        //    }
+        //    else{
+        //        System.out.println(w + " " + "is the largest number");
+        //    }
 
-                System.out.println("Forth task - print allowed actions");
+        System.out.println("Enter first number: ");
+        int a = scanner.nextInt();
+        System.out.println("Enter second number: ");
+        int b = scanner.nextInt();
+        System.out.println("Enter third number: ");
+        int c = scanner.nextInt();
+
+        if(a>=b && a>=c) {
+            System.out.println(a + " " + "is the largest number");
+        }
+        else if (b>=c && b>=a) {
+            System.out.println(b + " " + "is the largest number");
+        }
+        else{
+            System.out.println(c + " " + "is the largest number");
+              }
+
+                System.out.println("\nForth task - print allowed actions");
 
         String color = "Green";
             if (color.equals("Green")) {
@@ -86,7 +108,7 @@ public class HomeworkTwo {
                     System.out.println("Have to stop when it's" + " " + color + " " + "color");
                 }
                 else{
-                    System.out.println(color + " " + "is not traffic lights color");
+                    System.out.println("If traffic light doesn't work pass road carefully");
                 }
             }
 
