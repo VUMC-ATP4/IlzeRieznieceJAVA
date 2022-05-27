@@ -61,7 +61,7 @@ public class HomeworkTwo {
 
             int y = 10;
             int z = 16;
-            int w = 21;
+            int w = 9;
 
             if(y>=z && y>=w) {
                 System.out.println(y + " " + "is the largest number");
@@ -75,15 +75,15 @@ public class HomeworkTwo {
 
                 System.out.println("Forth task - print allowed actions");
 
-        String color = "Orange";
+        String color = "Green";
             if (color.equals("Green")) {
-                System.out.println("Can continue walking to the" + " " + color + " " + "color");
+                System.out.println("Can continue to walk when it's a" + " " + color + " " + "color");
             }
                 else if (color.equals("Red")){
-                    System.out.println("Have to wait to the" + " " + color + " " + "color");
+                    System.out.println("Have to wait when it's a" + " " + color + " " + "color");
                 }
                 else if (color.equals("Orange")){
-                    System.out.println("Have to stop to the" + " " + color + " " + "color");
+                    System.out.println("Have to stop when it's" + " " + color + " " + "color");
                 }
                 else{
                     System.out.println(color + " " + "is not traffic lights color");
