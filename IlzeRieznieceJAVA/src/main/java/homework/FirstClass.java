@@ -18,12 +18,20 @@ public class FirstClass {
 
         System.out.println("Country name is" + " " + countryName);
         System.out.println(countryName + "'s capital city is" + " " + capitalCity);
+
+       String concatTeikums = "Country is" + " " + countryName + ", capital city is" + " " + capitalCity + " " + ", officila language is" + " " + officialLanguage;
+       String teikums = String.format("Country is %s. The capital city is %s. The official language is %s.",countryName,capitalCity,officialLanguage);
+
+        System.out.println(concatTeikums);
+        System.out.println(teikums);
+
         System.out.println("Official language is" + " " + officialLanguage);
         System.out.println("The official currency is Chilean peso and it's symbol is" + " " + currency);
         System.out.println("Is" + " " + countryName + " " + "in EU?" + " " + isEuropeanUnion);
         System.out.println(countryName + "'s population is" + " " + population + " " + "(" + (double)population + ")");
         System.out.println(countryName + "'s area is" + " " + (int)areaValue + " " + "km2");
-        System.out.println("For every resident is available" + " " + areaValue/population + " " + "km2" );
+        System.out.println("For every resident is available" + " " + areaValue/population + " " + "km2");
+        System.out.println("For every resident is available" + " " + String.format("%.2f", (areaValue/population)) + " " + "km2");
         System.out.println("To buy 1 kg beef, 1 kg cheese and liter water is needed" + " " + (priceBeef+priceCheese+priceWater) + currency);
         System.out.println("If I have" + " " + pocketMoney + currency + " " + "and I buy 1 kg cheese, 1 kg beef and liter a water, I still left" + " " + (pocketMoney-(priceBeef+priceCheese+priceWater)) + currency);
 
