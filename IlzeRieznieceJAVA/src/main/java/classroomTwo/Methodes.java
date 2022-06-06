@@ -15,7 +15,16 @@ public class Methodes {
     static int calculateArea(int aA, int bB){
         return aA*bB;
 
+
+
 }
+
+
+
+    static int sum(int m, int n, int o) {
+        return m + n + o;
+
+    }
 
     static void printText(){
         System.out.println("There my method starts");
