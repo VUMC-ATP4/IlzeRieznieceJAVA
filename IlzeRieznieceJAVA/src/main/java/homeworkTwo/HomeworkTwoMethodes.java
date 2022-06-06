@@ -12,8 +12,12 @@ public class HomeworkTwoMethodes {
         printBusinessCard();
 
     //  Sixth task - print new business card with arguments 2 times
-        printBusinessCardTwo();
-        printBusinessCardTwo();
+
+        String card = printBusinessCardTwo("Kristīne ", "Vītola ", "+371 29867563", 1990);
+        String card1 = printBusinessCardTwo("Jāzeps", "Vītols", "+371 29867843", 2000);
+        System.out.println("Business card \n" +  card);
+        System.out.println("Business card \n" +  card1);
+
 
     //  Seventh task - 2 int as arguments in method sum,return sum without print. Result print in the main method
 
@@ -41,17 +45,15 @@ public class HomeworkTwoMethodes {
 
     }
 
-    static void printBusinessCardTwo(){
-        String nameTwo = "Anna";
-        String surnameTwo = "Diga";
-        int phoneNumberTwo = 29847356;
-        int yearOfBirthTwo = 1990;
 
-        String teikums = (" Name:" + nameTwo + "\n Surname:" + " " + surnameTwo + "\n Phone number: +371" + " " +phoneNumberTwo + "\n Year of birth:" + " " + yearOfBirthTwo);
-        System.out.println("Business card two");
-        System.out.println("##########");
-        System.out.println(teikums);
-        System.out.println("##########");
+
+    static String printBusinessCardTwo(String nameTwo, String surnameTwo, String phoneNumberTwo, int yearOfBirthTwo) {
+        return "##########\nVizitkarte" +
+                "\nVārds:" + nameTwo +
+                "\nUzvārds:" + surnameTwo +
+                "\nTelefona nr:" + phoneNumberTwo +
+                "\nDzimšanas gads:" + yearOfBirthTwo +
+                "\n##########";
 
     }
 
