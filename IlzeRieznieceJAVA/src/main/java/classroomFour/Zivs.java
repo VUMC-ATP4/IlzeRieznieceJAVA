@@ -8,6 +8,19 @@ public class Zivs {
     char valuta = '$';
     String izcelsmesValsts = "Latvija";
 
+
+    char dzimums;
+    String nosaukums;
+    String vide;
+    int vecums;
+
+    public void printetZivi() {
+        System.out.println("Zivs dzimums: " + dzimums);
+        System.out.println("Zivs nosaukums: " + nosaukums);
+        System.out.println("Zivs vide: " + vide);
+        System.out.println("Zivs vecums: " + vecums + "gadi veca");
+
+    }
     public void printetNosaukumu(){
         System.out.println("Zivs ir: " + zivsNosaukums + " " + "\n Izcelsmes valsts: " + izcelsmesValsts);
     }
