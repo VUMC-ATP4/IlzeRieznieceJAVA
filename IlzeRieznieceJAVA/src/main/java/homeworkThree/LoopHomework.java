@@ -12,14 +12,14 @@ public class LoopHomework {
         System.out.println("Ieraksti veselu skaitli");
         int number = scanner.nextInt();
         int summa = 0;
-        while (summa <= 99) {
-            summa = summa + number;
-            summa++;
+        while (summa <= 100) {
             System.out.println("Ieraksti veselu skaitli");
             number = scanner.nextInt();
+            //summa = summa + number;
+            System.out.println("Šobrīd summa ir " + summa);
 
         }
-        System.out.println("Gatavs");
+        System.out.println("Gatavs, summa ir " + summa);
 
 
         System.out.println("\nOtrais uzdevums\n");
