@@ -7,10 +7,10 @@ public class Main {
         trissturis1.b = 8;
         trissturis1.c = 8;
 
-        Trissturis trissturis2 = new Trissturis(5,5,10);
+        Trissturis trissturis2 = new Trissturis(8,5,10);
 
         trissturis1.printText();
-        trissturis2.printText(); // kāpēc otram trīsstūrim laukums printējas 0? Pārējie rādītāji printējas korekti?
+        trissturis2.printText();
 
     }
 
