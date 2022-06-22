@@ -6,16 +6,14 @@ public class LoopHomework {
     public static void main(String[] args) {
 
         System.out.println("Pirmais uzdevums\n");
-        // nolasa veselus skaitlus, ko ievada, apstajas, kad summa ir 100
+        // nolasa veselus skaitlus, ko ievada, apstājas, kad summa ir lielāka par 100
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ieraksti veselu skaitli");
-        int number = scanner.nextInt();
         int summa = 0;
         while (summa <= 100) {
             System.out.println("Ieraksti veselu skaitli");
-            number = scanner.nextInt();
-            //summa = summa + number;
+            int number = scanner.nextInt();
+            summa = summa + number;
             System.out.println("Šobrīd summa ir " + summa);
 
         }
@@ -56,18 +54,46 @@ public class LoopHomework {
         cities[3] = "Rīga";
         int[] randomSkaitli = {45, 55, 67, 89, 97};
         char[] randomBurti = {'A', 'B', 'C', 'D'};
-        int iterators = 0;
-        while (iterators < cities.length) {
-            System.out.println(cities[iterators]);
-            iterators++;
+        int pilsetas = 0;
+        while (pilsetas < cities.length) {
+            System.out.println(cities[pilsetas]);
+            pilsetas++;
         }
+
+        int skaitli = 0;
+        while (skaitli < randomSkaitli.length) {
+            System.out.println(randomSkaitli[skaitli]);
+            skaitli++;
+        }
+
+        int burti = 0;
+        while (burti < randomBurti.length) {
+            System.out.println(randomBurti[burti]);
+            burti++;
+        }
+
         System.out.println("##########################");
-        int a = 0;
+        int skaili2 = 0;
         do {
-            System.out.println(randomSkaitli[a]);
-            a++;
+            System.out.println(randomSkaitli[skaili2]);
+            skaili2++;
         }
-        while (a < randomSkaitli.length);
+        while (skaili2 < randomSkaitli.length);
+
+        int burti2 = 0;
+        do {
+            System.out.println(randomBurti[burti2]);
+            burti2++;
+        }
+        while (burti2 < randomBurti.length);
+
+        int pilsetas2 = 0;
+        do {
+            System.out.println(cities[pilsetas2]);
+            pilsetas2++;
+        }
+        while (pilsetas2 < cities.length);
+
 
         System.out.println("##########################");
 
@@ -75,9 +101,29 @@ public class LoopHomework {
             System.out.println(randomBurti[b]);
         }
 
+        for (int b = 0; b < randomSkaitli.length; b++) {
+            System.out.println(randomSkaitli[b]);
+        }
+
+        for (int b = 0; b < cities.length; b++) {
+            System.out.println(cities[b]);
+        }
         System.out.println("##########################");
 
-        System.out.println("\nCeturtais uzdevume \n");
+        for (String pilsetas3 : cities ) {
+            System.out.println(pilsetas3);
+        }
+
+        for (int skaitli3 : randomSkaitli) {
+            System.out.println(skaitli3);
+        }
+
+        for (char burti3 : randomBurti) {
+            System.out.println(burti3);
+        }
+
+
+        System.out.println("\nCeturtais uzdevums \n");
         // definet veselu skaitlu masivu ar izmeru 100, ar ciklu aizpildit masivu ar para skaitliem un izvadit tos viena linija
 
         for (int l = 1; l < 100; l++) {
@@ -105,21 +151,21 @@ public class LoopHomework {
         final int pinKods = 2222;
         int lietotajaPinKods;
         int ievaditoReizuSkaits = 0;
-        System.out.println("Ievadi konta PIN kodu");
-        lietotajaPinKods = scanner.nextInt();
 
-        while (lietotajaPinKods != pinKods && ievaditoReizuSkaits <= 3) ;
-        System.out.println("Nepareizs PIN, mēģiniet vēlreiz");
-        lietotajaPinKods = scanner.nextInt();
-        lietotajaPinKods++;
-
-        if (lietotajaPinKods == pinKods) {
-            System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ");
-        } else {
-            System.out.println("Atvainojiet, bet jūs esat bloķēts");
+        while (ievaditoReizuSkaits <= 3) {
+            ievaditoReizuSkaits++;
+            System.out.println("Ievadi konta PIN kodu");
+            lietotajaPinKods = scanner.nextInt();
+            if (lietotajaPinKods == pinKods) {
+                System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ");
+                break;
+            } else if (ievaditoReizuSkaits == 3 && lietotajaPinKods != pinKods) {
+                System.out.println("Atvainojiet, bet jūs esat bloķēts");
+                break;
+            } else {
+                System.out.println("Nepareizs PIN, mēģiniet vēlreiz");
+            }
         }
     }
-
-
 }
 
