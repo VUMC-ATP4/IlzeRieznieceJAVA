@@ -10,7 +10,7 @@ public class ExtraHomework {
         Random random = new Random();
 // Generates random integers 0 to 50
         int x = random.nextInt(51);
-        System.out.println("Guess the number. You have 10 attempts! Write your number!");
+        System.out.println("Guess the number from 0 to 50. You have 10 attempts! Write your number!");
 
         while (attempts <= 10 ) {
             attempts++;
