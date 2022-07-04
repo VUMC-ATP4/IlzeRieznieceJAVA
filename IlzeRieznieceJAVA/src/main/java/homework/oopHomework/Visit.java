@@ -3,16 +3,16 @@ package homework.oopHomework;
 import java.util.Date;
 
 public class Visit {
-    private String customer;
+    private Customer customer;
     private Date date;
     private double serviceExpense;
     private double productExpense;
     private double totalExpenses;
 
-   // public Visit (String customer, Date date) {
-      //  Customer = customer;
-       // this.date = date;
-   // }
+   public Visit (Customer customer, Date date) {
+       this.customer = customer;
+       this.date = date;
+    }
     public double getServiceExpense() {
         return serviceExpense;
 }
@@ -27,8 +27,10 @@ public class Visit {
     }
 
     public double getTotalExpenses () {
-        return totalExpenses;
+       totalExpenses = productExpense + serviceExpense;
+       return totalExpenses;
     }
+
 
     @Override
     public String toString() {
