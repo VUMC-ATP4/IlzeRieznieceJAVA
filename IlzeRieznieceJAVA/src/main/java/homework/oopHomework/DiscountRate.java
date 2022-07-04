@@ -4,9 +4,13 @@ public class DiscountRate {
     private static double serviceDiscountPremium = 0.2;
     private static double serviceDiscountGold = 0.15;
     private static double serviceDiscountSilver = 0.1;
+
+    private static int serviceDiscountNonCustomer = 0;
     private static double productDiscountPremium = 0.1;
     private static double productDiscountGold = 0.1;
     private static double productDiscountSilver = 0.1;
+
+    private static int productDiscountNonCustomer = 0;
 
     public double getServiceDiscountPremium() {
         return serviceDiscountPremium;
@@ -31,4 +35,14 @@ public class DiscountRate {
     public double getProductDiscountSilver() {
         return productDiscountSilver;
     }
+
+    public int getServiceDiscountNonCustomer() {
+        return serviceDiscountNonCustomer;
+    }
+
+    public int getProductDiscountNonCustomer() {
+        return productDiscountNonCustomer;
+    }
+
+
 }
